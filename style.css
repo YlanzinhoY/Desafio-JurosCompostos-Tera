@@ -1,0 +1,68 @@
+body{
+    background: #aaff;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+input{
+    border-radius: 8px;
+    border: none;
+    background: #0ff;
+    text-align: center;
+    font-size: 20px;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+button:hover{
+    background: crimson;
+    color: #fff;
+}
+label{
+    color: rgb(243, 246, 249);
+    font-size: 25px;
+}
+
+.simu{
+    width: 200px;
+    background: rgb(61, 61, 63);
+    color: #ffff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.container{
+    padding: 10px;
+    background: rgb(31, 124, 186);
+}
+.mensagem{
+    background: rgb(9, 52, 126);
+    padding: 20px;
+    color: rgb(237, 216, 216);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.section{
+    background: rgb(80, 118, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    max-height: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+.title{
+    background: rgb(48, 83, 199);
+    padding: 30px;
+}

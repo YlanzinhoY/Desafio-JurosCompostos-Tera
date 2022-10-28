@@ -5,51 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcular juros compostos</title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <style>
-        body{
-            background: #aaff;
-            color: #fff;
-        }
-        .div{
-            display: flex;
-            flex-direction: column;
-            max-width: 200px;
-            justify-content: center;;
-        }
-        input{
-            border-radius: 8px;
-            border: none;
-            background: #0ff;
-        }
-        button{
-            border: none;
-            border-radius: 20px;
-        }
-        button:hover{
-            background: crimson;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="body" >
-    <h1>Simulador de Juros compostos</h1>
+<body id="body">
+   <div class="title">
+        <h1>Simulador de Juros compostos</h1>
+   </div>
 <div class="div">
-    <label>Nome</label>
+    <section class="section">
+        <label>Nome</label>
     <input type="text" placeholder="Seu nome" id="meuNome" class="nome" name="">
-
     <label>Mensalidade</label>
     <input type="number" placeholder="mensalidae" id="ms" name="">
-    
     <label>Tempo de contribuição</label>
     <input type="number" placeholder="contribuição em anos" id="tc" name="">
-    <br>
-    <button onclick="gerar()">Simular</button>
+    <button onclick="gerar()" class="simu">Simular</button>
 </div>
-<hr>
-<p id="para"></p>
-
+    </section>
     <script src="script.js"></script>
     
 </body>
