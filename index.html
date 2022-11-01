@@ -14,15 +14,14 @@
 <div class="div">
     <section class="section">
         <label>Nome</label>
-    <input type="text" placeholder="Seu nome" id="meuNome" class="nome" name="">
+    <input type="text" placeholder="Seu nome" id="meuNome" class="nome" name="" pattern="/^[a-zA-Z]$/">
     <label>Mensalidade</label>
     <input type="number" placeholder="mensalidae" id="ms" name="">
     <label>Tempo de contribuição</label>
     <input type="number" placeholder="contribuição em anos" id="tc" name="">
-    <button onclick="gerar()" class="simu">Simular</button>
+    <button onclick="gerar(this)" class="simu">Simular</button>
 </div>
     </section>
     <script src="script.js"></script>
-    
 </body>
 </html>

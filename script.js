@@ -2,16 +2,17 @@ function gerar(){
     const nome = document.getElementById('meuNome')
     const mensalidade = document.getElementById('ms')
     const tempoContribuicao = document.getElementById('tc').value
+
     const tempo = tempoContribuicao * 12
     const taxaJuros = parseFloat(0.00517)
 
-    let juros = parseFloat((mensalidade.value * (((1 + taxaJuros) ** tempo - 1) / taxaJuros)
-    ))
+    let juros = parseFloat((mensalidade.value * (((1 + taxaJuros) ** tempo - 1) / taxaJuros)))
 
-    if(nome.value ==='' || mensalidade.value === '' || tempoContribuicao === ''){
+    if(!nome.value.match(/^[a-zA-Z_ ]*$/) || mensalidade.value === '' || tempoContribuicao === ''){
         return alert('Preencha todos os campos')
     } else{
-        let body = document.getElementById('body')
+
+        const body = document.getElementById('body')
         body.innerHTML = `<div class="container"><h1 class="mensagem">Olá ${nome.value} Juntando R$ ${mensalidade.value} todo mês, você terá R$ ${juros.toFixed(2)} em ${tempo} meses</h1> 
         <button onclick="voltar()">Simular novamente</button></div>
         `
